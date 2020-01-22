@@ -1,0 +1,72 @@
+package com.test.domain.po;
+
+import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
+
+
+public class Movie implements Serializable{
+   private Integer id;
+   private String movName;
+   private String pictureName;
+   private String releaseTime;
+   private String detail;
+   private String director;
+   private String actors;
+   // ¶à¶Ô¶à
+   private Set<MovieType> movietyper =new HashSet<MovieType>();
+public Integer getId() {
+	return id;
+}
+public void setId(Integer id) {
+	this.id = id;
+}
+public String getMovName() {
+	return movName;
+}
+public void setMovName(String movName) {
+	this.movName = movName;
+}
+public String getPictureName() {
+	return pictureName;
+}
+public void setPictureName(String pictureName) {
+	this.pictureName = pictureName;
+}
+public String getReleaseTime() {
+	return releaseTime;
+}
+public void setReleaseTime(String releaseTime) {
+	this.releaseTime = releaseTime;
+}
+public String getDetail() {
+	return detail;
+}
+public void setDetail(String detail) {
+	this.detail = detail;
+}
+public String getDirector() {
+	return director;
+}
+public void setDirector(String director) {
+	this.director = director;
+}
+public String getActors() {
+	return actors;
+}
+public void setActors(String actors) {
+	this.actors = actors;
+}
+public Set<MovieType> getMovietyper() {
+	return movietyper;
+}
+public void setMovietyper(Set<MovieType> movietyper) {
+	this.movietyper = movietyper;
+}
+public Movie() {
+	super();
+	// TODO Auto-generated constructor stub
+}
+
+   
+}

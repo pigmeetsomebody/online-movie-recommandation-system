@@ -1,0 +1,13 @@
+package com.test.dao;
+
+import java.util.List;
+
+import com.test.domain.po.Movie;
+
+public interface MovieDao {
+       Movie findById(Integer id);
+       List<Movie> findAll();
+       Integer insert(Movie movie);
+       Integer update(Movie movie);
+       Integer delete(Integer id);
+}
